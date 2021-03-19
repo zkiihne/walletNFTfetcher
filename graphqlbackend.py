@@ -51,20 +51,7 @@ def get_uri(contract_address, token_id, owner_address):
         },
     ]
 
-    ck_extra_abi = [
-        {
-            'inputs': [],
-            'name': 'pregnantKitties',
-            'outputs': [{'name': '', 'type': 'uint256'}],
-            'payable': False, 'stateMutability': 'view', 'type': 'function', 'constant': True
-        },
-        {
-            'inputs': [{'name': '_kittyId', 'type': 'uint256'}],
-            'name': 'isPregnant',
-            'outputs': [{'name': '', 'type': 'bool'}],
-            'payable': False, 'stateMutability': 'view', 'type': 'function', 'constant': True
-        }
-    ]
+    
     image_links = []
     total_uri = []
     for i in range(0, len(token_id)):
