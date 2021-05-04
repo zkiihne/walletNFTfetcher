@@ -4,7 +4,7 @@ from PIL import Image
 import requests
 from urllib.request import Request, urlopen  # Python 3
 from web3 import Web3
-
+client = MongoClient('mongodb+srv://zkiihne:union557@cluster0-ij9ez.mongodb.net/test?retryWrites=true&w=majority')
 
 from multiprocessing.dummy import Pool as ThreadPool
 
